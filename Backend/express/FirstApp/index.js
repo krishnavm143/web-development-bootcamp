@@ -11,6 +11,12 @@ app.get("/r/:id", (req, res) => {
   res.send(id);
 });
 
+app.get("/search", (req, res) => {
+  const { q, color } = req.query;
+  // console.log(req.query);
+  res.send(`<h1>These are the query values ${(q, color)}</h1>`);
+});
+
 app.get("/cats", (req, res) => {
   res.send("meow");
 });
