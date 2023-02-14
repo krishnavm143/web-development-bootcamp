@@ -1,10 +1,8 @@
-<%- include('partials/head') %>
-<body>
-    <h1>The list of cats and count is <%= cats.length %></h1>
-    <ul>
-        <%for(cat of cats){%>
-        <li><%= cat  %></li>
-        <% }%>
-    </ul>
-</body>
-</html>
+<%- include('partials/head') %> <%- include('partials/navBar') %>
+<h1>The list of cats and count is <%= cats.length %></h1>
+<ul>
+  <%for(cat of cats){%>
+  <li><%= cat %></li>
+  <% }%>
+</ul>
+<%- include('partials/footer') %>
