@@ -8,23 +8,24 @@
   </head>
   <body>
     <div>
-      <form action="" method="post">
+      <form action="/comments" method="post">
         <section>
           <label for="username">Enter username</label>
-          <input type="text" id="username" placeholder="enter user name" />
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="enter user name"
+          />
         </section>
         <br />
         <section>
           <label for="comments"></label>
-          <textarea
-            name="commments"
-            id="comments"
-            cols="30"
-            rows="10"
-          ></textarea>
+          <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
         </section>
         <button>submit</button>
       </form>
     </div>
+    <a href="/comments">Back to comments</a>
   </body>
 </html>
